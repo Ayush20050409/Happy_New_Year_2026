@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="or">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ନବବର୍ଷ ଅଭିନନ୍ଦନ ୨୦୨୬</title>
+    <style>
+        /* ଗୁଗଲ୍ ଫଣ୍ଟ୍ ବ୍ୟବହାର */
+        @import url('https://fonts.googleapis.com/css2?family=Oriya:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #3d0101, #000000);
+            color: #f1f1f1;
+            font-family: 'Oriya', 'Kohinoor Devanagari', sans-serif;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* ଶୀର୍ଷକ ସଜ୍ଜା */
+        .hero-section {
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #ffcc00;
+            text-shadow: 0 0 15px #ff4500, 2px 2px 5px #000;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .sub-text {
+            font-size: 1.6rem;
+            color: #ffd700;
+            margin-top: 15px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        /* ଚିତ୍ର ଏବଂ ଫାୟାର୍ ବର୍ଡର ସଜ୍ଜା */
+        .deity-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            padding: 50px 20px;
+        }
+
+        .image-wrapper {
+            position: relative;
+            width: 260px;
+            height: 260px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* ନିଆଁ ଭଳି ଘୂର୍ଣ୍ଣନ ବର୍ଡର */
+        .fire-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, transparent, #ff4500, #ffae00, #fff, #ff4500);
+            animation: rotateFire 1.5s linear infinite;
+            box-shadow: 0 0 30px rgba(255, 69, 0, 0.6);
+        }
+
+        .fire-ring::after {
+            content: '';
+            position: absolute;
+            inset: 6px;
+            background: #1a0101;
+            border-radius: 50%;
+        }
+
+        @keyframes rotateFire {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .deity-photo {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            object-fit: cover;
+            z-index: 10;
+            border: 3px solid #ffd700;
+            transition: transform 0.3s;
+        }
+
+        .deity-photo:hover {
+            transform: scale(1.05);
+        }
+
+        .label {
+            margin-top: 280px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff9900;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        /* ଉଚ୍ଚକୋଟୀର ସାହିତ୍ୟିକ ବିଷୟବସ୍ତୁ */
+        .blessing-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border-left: 5px solid #ff4500;
+            border-right: 5px solid #ff4500;
+            line-height: 2;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .shloka {
+            font-size: 1.8rem;
+            color: #ffd700;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .message {
+            font-size: 1.3rem;
+            text-align: justify;
+            color: #e0e0e0;
+        }
+
+        /* ପାଦିକା (Footer) */
+        footer {
+            margin-top: 80px;
+            padding: 30px;
+            background: #000;
+            border-top: 1px solid #333;
+            letter-spacing: 1px;
+        }
+
+        .credit {
+            font-size: 1.3rem;
+            color: #888;
+        }
+
+        .name {
+            color: #ffcc00;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        /* Animations */
+        .fade-up {
+            animation: fadeUp 2s ease-out forwards;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .light{
+    position:fixed;
+    top:-10px;
+    width:5px;
+    height:5px;
+    background:#ffd700;
+    border-radius:50%;
+    animation: fall linear infinite;
+    opacity:0.75;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(115vh);
+        opacity:0;
+    }
+}
+
+/* mobile optimization */
+@media (max-width:600px){
+    .image-wrapper{
+        width:180px;
+        height:180px;
+    }
+    .blessing-container{
+        padding:24px 20px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <section class="hero-section fade-up">
+        <h1>ଶୁଭ ଅଭିନନ୍ଦନ: ନବବର୍ଷ ୨୦୨୬</h1>
+        <div class="sub-text">"କାଳର କପୋଳ ତଳେ ଏକ ନୂତନ ସମ୍ଭାବନାର ସୂର୍ଯ୍ୟୋଦୟ"</div>
+    </section>
+
+    <div class="deity-gallery">
+        <div class="image-wrapper fade-up">
+            <div class="fire-ring"></div>
+            <img src="jagannath.jpeg" alt="Jagannath" class="deity-photo" onerror="this.src='https://images.unsplash.com/photo-1620311136402-239634f664b4?auto=format&fit=crop&w=300'">
+            <div class="label">ପରମବ୍ରହ୍ମ ଶ୍ରୀ ଜଗନ୍ନାଥ</div>
+        </div>
+
+        <div class="image-wrapper fade-up" style="animation-delay: 0.3s;">
+            <div class="fire-ring"></div>
+            <img src="dakhinakali.jpeg" alt="Kali" class="deity-photo" onerror="this.src='https://images.unsplash.com/photo-1582234052328-912f27572d4c?auto=format&fit=crop&w=300'">
+            <div class="label">ଆଦ୍ୟାଶକ୍ତି ମାଆ କାଳୀ</div>
+        </div>
+
+        <div class="image-wrapper fade-up" style="animation-delay: 0.6s;">
+            <div class="fire-ring"></div>
+            <img src="charchika.jpeg" alt="Charchika" class="deity-photo" onerror="this.src='https://images.unsplash.com/photo-1614082150827-023a1a011019?auto=format&fit=crop&w=300'">
+            <div class="label">ଅଧିଷ୍ଠାତ୍ରୀ ଦେବୀ ମାଆ ଚର୍ଚ୍ଚିକା</div>
+        </div>
+    </div>
+
+    <div class="blessing-container fade-up">
+        <div class="shloka">"ନୀଳାଦ୍ରି ବିହାରୀ ମହାପ୍ରଭୁଙ୍କ ଶ୍ରୀଚରଣରେ କୋଟି ପ୍ରଣତି"</div>
+        <div class="message">
+            ସମୟର ଅବିରତ ପ୍ରବାହରେ ବିଗତ ବର୍ଷର ସ୍ମୃତିକୁ ପାଥେୟ କରି ଆଜି ଆମେ ଏକ ନୂତନ ପ୍ରଭାତକୁ ସ୍ୱାଗତ କରୁଛୁ। ଚତୁର୍ଦ୍ଧାମୂର୍ତ୍ତିଙ୍କ ଅପାର କରୁଣା, ମାଆ ଦକ୍ଷିଣକାଳୀଙ୍କ ଅଭୟ ବରଦାନ ଏବଂ ମାଆ ଚର୍ଚ୍ଚିକାଙ୍କ ମାତୃସୁଲଭ ଆଶୀର୍ବାଦ ଆପଣଙ୍କ ଜୀବନର ପ୍ରତିଟି ପଥକୁ ଆଲୋକିତ କରୁ। <br><br>
+            ଏହି ନୂତନ ବର୍ଷ ୨୦୨୬, ଆପଣଙ୍କ ପାଇଁ କେବଳ ଏକ କାଳଖଣ୍ଡ ନହୋଇ ସମୃଦ୍ଧି, ସୁଖ ଏବଂ ପରମ ଶାନ୍ତିର ଏକ ମହାପର୍ବ ହେଉ। ଜଗତର ନାଥ ଜଗନ୍ନାଥ ଆପଣଙ୍କ ସମସ୍ତ ସାଧୁ ସଂକଳ୍ପକୁ ସଫଳ କରନ୍ତୁ ଏବଂ ସମାଜରେ ମୈତ୍ରୀ ଓ ଭାତୃଭାବର ଅମୃତ ନିର୍ଝରିଣୀ ପ୍ରବାହିତ ହେଉ।
+        </div>
+    </div>
+
+    <footer>
+          <div class="footer">
+        🙏 ଜୟ ଜଗନ୍ନାଥ | ଜୟ ମାଁ କାଳୀ | ଜୟ ମାଁ ଚର୍ଚ୍ଚିକା 🙏
+        <div class="footer-name">
+            — ଆୟୁଶ କୁମାର ରାଉତରାୟ —
+        </div>
+    </footer>
+
+    <script>
+window.onload = () => {
+    for(let i=0;i<40;i++){
+        let light = document.createElement("div");
+        light.className = "light";
+        light.style.left = Math.random()*100 + "vw";
+        light.style.top = Math.random()*-100 + "px";
+        light.style.animationDuration = 2 + Math.random()*3 + "s";
+        light.style.animationDelay = Math.random()*3 + "s";
+
+        light.addEventListener("animationend", () => {
+            light.remove();
+        });
+
+        document.body.appendChild(light);
+    }
+};
+</script>
+
+</body>
+</html>
