@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="or">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ନବବର୍ଷ ଅଭିନନ୍ଦନ ୨୦୨୬</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oriya:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #3d0101, #000000);
+            color: #f1f1f1;
+            font-family: 'Oriya', 'Kohinoor Devanagari', sans-serif;
+            text-align: center;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        /* Responsive Hero Section */
+        .hero-section {
+            padding: 10vh 5%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            font-size: clamp(1.8rem, 5vw, 3.5rem); /* Auto-scales between mobile and desktop */
+            color: #ffcc00;
+            text-shadow: 0 0 15px #ff4500, 2px 2px 5px #000;
+            margin: 0;
+        }
+
+        .sub-text {
+            font-size: clamp(1rem, 2.5vw, 1.6rem);
+            color: #ffd700;
+            margin-top: 15px;
+        }
+
+        /* Responsive Gallery Grid */
+        .deity-gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* Reduced gap for better wrapping */
+            flex-wrap: wrap;
+            padding: 40px 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .image-container {
+            flex: 0 1 300px; /* Base size of 300px, but can shrink */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .image-wrapper {
+            position: relative;
+            width: clamp(180px, 50vw, 260px); /* Scales based on screen width */
+            height: clamp(180px, 50vw, 260px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fire-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, transparent, #ff4500, #ffae00, #fff, #ff4500);
+            animation: rotateFire 1.5s linear infinite;
+            box-shadow: 0 0 20px rgba(255, 69, 0, 0.6);
+        }
+
+        .fire-ring::after {
+            content: '';
+            position: absolute;
+            inset: 6px;
+            background: #1a0101;
+            border-radius: 50%;
+        }
+
+        @keyframes rotateFire {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .deity-photo {
+            position: relative;
+            width: calc(100% - 30px); /* Always slightly smaller than the ring */
+            height: calc(100% - 30px);
+            border-radius: 50%;
+            object-fit: cover;
+            z-index: 10;
+            border: 3px solid #ffd700;
+            transition: transform 0.3s;
+        }
+
+        .label {
+            margin-top: 20px;
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            font-weight: bold;
+            color: #ff9900;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        /* Content Box - Adjusts width based on device */
+        .blessing-container {
+            width: 90%;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: clamp(20px, 5vw, 40px);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border-left: 5px solid #ff4500;
+            border-right: 5px solid #ff4500;
+            line-height: 1.8;
+        }
+
+        .shloka {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: clamp(0.95rem, 2vw, 1.3rem);
+            text-align: justify;
+            color: #e0e0e0;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 30px 10px;
+            background: #000;
+            border-top: 1px solid #333;
+        }
+
+        .footer-name {
+            color: #ffcc00;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Falling Light effect */
+        .light {
+            position: fixed;
+            top: -10px;
+            width: 4px;
+            height: 4px;
+            background: #ffd700;
+            border-radius: 50%;
+            animation: fall linear infinite;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        @keyframes fall {
+            to { transform: translateY(110vh); opacity: 0; }
+        }
+
+        /* Animations */
+        .fade-up {
+            animation: fadeUp 1.5s ease-out forwards;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero-section fade-up">
+        <h1>ଶୁଭ ଅଭିନନ୍ଦନ: ନବବର୍ଷ ୨୦୨୬</h1>
+        <div class="sub-text">"କାଳର କପୋଳ ତଳେ ଏକ ନୂତନ ସମ୍ଭାବନାର ସୂର୍ଯ୍ୟୋଦୟ"</div>
+    </section>
+
+    <div class="deity-gallery">
+        <div class="image-container fade-up">
+            <div class="image-wrapper">
+                <div class="fire-ring"></div>
+                <img src="jagannath.jpeg" alt="Jagannath" class="deity-photo" onerror="this.src='https://images.unsplash.com/photo-1620311136402-239634f664b4?auto=format&fit=crop&w=300'">
+            </div>
+            <div class="label">ପରମବ୍ରହ୍ମ ଶ୍ରୀ ଜଗନ୍ନାଥ</div>
+        </div>
+
+        <div class="image-container fade-up" style="animation-delay: 0.2s;">
+            <div class="image-wrapper">
+                <div class="fire-ring"></div>
+                <img src="dakhinakali.jpeg" alt="Kali" class="deity-photo" onerror="this.src='https://images.unsplash.com/photo-1582234052328-912f27572d4c?auto=format&fit=crop&w=300'">
+            </div>
+            <div class="label">ଆଦ୍ୟାଶକ୍ତି ମାଆ କାଳୀ</div>
+        </div>
+
+        <div class="image-container fade-up" style="animation-delay: 0.4s;">
+            <div class="image-wrapper">
+                <div class="fire-ring"></div>
+                <img src="charchika.jpeg" alt="Charchika" class="deity-photo" onerror="this.src='https://images.unsplash.com/photo-1614082150827-023a1a011019?auto=format&fit=crop&w=300'">
+            </div>
+            <div class="label">ଅଧିଷ୍ଠାତ୍ରୀ ଦେବୀ ମାଆ ଚର୍ଚ୍ଚିକା</div>
+        </div>
+    </div>
+
+    <div class="blessing-container fade-up">
+        <div class="shloka">"ନୀଳାଦ୍ରି ବିହାରୀ ମହାପ୍ରଭୁଙ୍କ ଶ୍ରୀଚରଣରେ କୋଟି ପ୍ରଣତି"</div>
+        <div class="message">
+            ସମୟର ଅବିରତ ପ୍ରବାହରେ ବିଗତ ବର୍ଷର ସ୍ମୃତିକୁ ପାଥେୟ କରି ଆଜି ଆମେ ଏକ ନୂତନ ପ୍ରଭାତକୁ ସ୍ୱାଗତ କରୁଛୁ। ଚତୁର୍ଦ୍ଧାମୂର୍ତ୍ତିଙ୍କ ଅପାର କରୁଣା, ମାଆ ଦକ୍ଷିଣକାଳୀଙ୍କ ଅଭୟ ବରଦାନ ଏବଂ ମାଆ ଚର୍ଚ୍ଚିକାଙ୍କ ମାତୃସୁଲଭ ଆଶୀର୍ବାଦ ଆପଣଙ୍କ ଜୀବନର ପ୍ରତିଟି ପଥକୁ ଆଲୋକିତ କରୁ। <br><br>
+            ଏହି ନୂତନ ବର୍ଷ ୨୦୨୬, ଆପଣଙ୍କ ପାଇଁ କେବଳ ଏକ କାଳଖଣ୍ଡ ନହୋଇ ସମୃଦ୍ଧି, ସୁଖ ଏବଂ ପରମ ଶାନ୍ତିର ଏକ ମହାପର୍ବ ହେଉ। ଜଗତର ନାଥ ଜଗନ୍ନାଥ ଆପଣଙ୍କ ସମସ୍ତ ସାଧୁ ସଂକଳ୍ପକୁ ସଫଳ କରନ୍ତୁ ଏବଂ ସମାଜରେ ମୈତ୍ରୀ ଓ ଭାତୃଭାବର ଅମୃତ ନିର୍ଝରିଣୀ ପ୍ରବାହିତ ହେଉ।
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-blessing">
+            🙏 ଜୟ ଜଗନ୍ନାଥ | ଜୟ ମାଁ କାଳୀ | ଜୟ ମାଁ ଚର୍ଚ୍ଚିକା 🙏
+        </div>
+        <div class="footer-name">
+            — ଆୟୁଶ କୁମାର ରାଉତରାୟ —
+        </div>
+    </footer>
+
+    <script>
+        // Efficient Particle System
+        function createLights() {
+            const container = document.body;
+            for(let i=0; i<30; i++){
+                let light = document.createElement("div");
+                light.className = "light";
+                light.style.left = Math.random() * 100 + "vw";
+                light.style.animationDuration = (Math.random() * 3 + 2) + "s";
+                light.style.animationDelay = (Math.random() * 5) + "s";
+                container.appendChild(light);
+            }
+        }
+        window.onload = createLights;
+    </script>
+
+</body>
+</html>
